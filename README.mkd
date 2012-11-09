@@ -14,6 +14,8 @@ gem 'hashie'
 
 Quick Start
 -----------
+Establish a connection with the client.  If you are only consuming information, an app_token is not required.
 ```ruby
 @client = SODA::Client.new({:domain => "sandbox.demo.socrata.com", :app_token => "K6rLY8NBK0Hgm8QQybFmwIUQw" })
+response = @client.get("earthquakes")
 ```
